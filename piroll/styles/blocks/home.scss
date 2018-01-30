@@ -1,0 +1,106 @@
+.home {
+    margin: 0 auto 80px auto;
+    padding: 0 0 205px 0;
+    max-width: $page-width;
+    font-family: 'Montserrat', sans-serif;
+    background: url('../assets/header/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__logo {
+        cursor: pointer;
+        transition: transform 1s ease;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+
+    &__menu {
+        display: flex;
+        padding: 35px 100px;
+    }
+
+    &__list {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &-item {
+            position: relative;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            color: $black;
+            cursor: pointer;
+
+            &::after {
+                position: absolute;
+                content: "";
+                height: 2px;
+                bottom: -5px;
+                left: 0;
+                right: 0;
+                background-color: $light-green;
+                opacity: 0;
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            & + & {
+                margin-left: 34px;
+            }
+
+            &._active::after {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__body {
+        display: flex;
+        margin-top: 130px;
+    }
+
+    &__intro {
+        margin-left: auto;
+        padding: 0 130px;
+        max-width: 470px;
+    }
+
+    &__title {
+        margin-bottom: 35px;
+        font-size: 35px;
+        font-weight: bolder;
+        letter-spacing: 0.02em;
+    }
+
+    &__info {
+        margin-bottom: 40px;
+        line-height: 1.5;
+        color: $light-grey;
+        font-weight: 500;
+    }
+
+    &__contacts {
+        display: inline-block;
+        padding: 20px 50px;
+        background-color: $light-green;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        cursor: pointer;
+        transition: background-color .2s ease;
+
+        &:hover {
+            background-color: $dark-green;
+        }
+    }
+}

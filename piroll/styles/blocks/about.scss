@@ -1,0 +1,30 @@
+.about {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 75px auto;
+    padding: 20px 0;
+    max-width: $page-width;
+    font-family: 'Montserrat', sans-serif;
+
+    &__title {
+        font-weight: 700;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    &__info {
+        max-width: 610px;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 14px;
+        font-weight: 500;
+        color: $black;
+        margin-bottom: 20px;
+    }
+
+    &__signature {
+        max-width: 300px;
+    }
+}

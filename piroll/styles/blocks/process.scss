@@ -1,0 +1,47 @@
+.process {
+    margin: 0 auto;
+    max-width: $page-width;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $light-green;
+    color: white;
+    padding: 100px 0;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 100px;
+    }
+
+    &__item {
+        display: flex;
+        color: $black;
+        justify-content: space-between;
+        align-items: stretch;
+        color: #fff;
+        
+        &-logo {
+            min-width: 45px;
+            margin-right: 20px;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+
+            &-number {
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            &-text {
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+}
