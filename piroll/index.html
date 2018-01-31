@@ -2,45 +2,46 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+
 </head>
 
 <body>
-    <div class="home">
-        <div class="home__menu">
-            <div class="home__logo">
+    <div class="header" id="home">
+        <div class="header__menu">
+            <div class="header__logo">
                 <img src="./assets/SVG/diamond.svg" alt="Logo">
             </div>
-            <div class="home__list">
-                <div class="home__list-item _active">Home</div>
-                <div class="home__list-item">About</div>
-                <div class="home__list-item">Work</div>
-                <div class="home__list-item">Process</div>
-                <div class="home__list-item">Services</div>
-                <div class="home__list-item">Testimonials</div>
-                <div class="home__list-item">Contact</div>
+            <div class="header__list">
+                <div class="header__list-item _active" id="home_btn">Home</div>
+                <div class="header__list-item" id="about_btn">About</div>
+                <div class="header__list-item" id="work_btn">Work</div>
+                <div class="header__list-item" id="process_btn">Process</div>
+                <div class="header__list-item" id="services_btn">Services</div>
+                <div class="header__list-item" id="testimonials_btn">Testimonials</div>
+                <div class="header__list-item" id="contact">Contact</div>
             </div>
         </div>
 
-        <div class="home__body">
-            <div class="home__intro">
-                <div class="home__title">
+        <div class="header__body">
+            <div class="header__intro">
+                <div class="header__title">
                     We Design and Develop
                 </div>
-                <div class="home__info">
+                <div class="header__info">
                     We are a new design studio based in USA. We have over 20 years of combined expreience, and know a thing or two about designing
                     websites and mobile apps.
                 </div>
-                <div class="home__contacts">
+                <div class="header__contacts">
                     Contact us
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="about__title">
             About Us
         </div>
@@ -54,22 +55,22 @@
         </div>
     </div>
 
-    <div class="work">
-        <div class="work__body">
-            <div class="work__title">
-                Professional work
+    <div class="skills">
+        <div class="skills__body">
+            <div class="skills__title">
+                Professional skills
             </div>
 
-            <div class="work__list">
-                <div class="work__list-item _design">
+            <div class="skills__list">
+                <div class="skills__list-item _design">
                     UI/UX Design
                     <span class="_percent">70%</span>
                 </div>
-                <div class="work__list-item _development">
+                <div class="skills__list-item _development">
                     Web Development
                     <span class="_percent">90%</span>
                 </div>
-                <div class="work__list-item _marketing">
+                <div class="skills__list-item _marketing">
                     Marketing
                     <span class="_percent">65%%</span>
                 </div>
@@ -77,62 +78,157 @@
         </div>
     </div>
 
-    <div class="process">
-        <div class="process__list">
-            <div class="process__item">
-                <div class="process__item-logo">
+    <div class="achievements" id="work">
+        <div class="achievements__list">
+            <div class="achievements__item">
+                <div class="achievements__img">
                     <img src="./assets/SVG/wallet.svg" style="fill: white" alt="Projects completed">
                 </div>
-                <div class="process__item-info">
-                    <div class="process__item-info-number">
+                <div class="achievements__info">
+                    <div class="achievements__number">
                         548
                     </div>
-                    <div class="process__item-info-text">
+                    <div class="achievements__text">
                         Projects completed
                     </div>
                 </div>
             </div>
-            <div class="process__item">
-                <div class="process__item-logo">
-                    <img src="./assets/SVG/angle-down-circle.svg" alt="Working hours">
+
+            <div class="achievements__item">
+                <div class="achievements__img">
+                    <img src="./assets/SVG/angle-down-circle.svg" alt="skillsing hours">
                 </div>
-                <div class="process__item-info">
-                    <div class="process__item-info-number">
+                <div class="achievements__info">
+                    <div class="achievements__number">
                         1465
                     </div>
-                    <div class="process__item-info-text">
+                    <div class="achievements__text">
                         Working hours
                     </div>
                 </div>
             </div>
-            <div class="process__item">
-                <div class="process__item-logo">
-                        <img src="./assets/SVG/star.svg" alt="Positive feedbacks">
+
+            <div class="achievements__item">
+                <div class="achievements__img">
+                    <img src="./assets/SVG/star.svg" alt="Positive feedbacks">
                 </div>
-                <div class="process__item-info">
-                    <div class="process__item-info-number">
+                <div class="achievements__info">
+                    <div class="achievements__number">
                         612
                     </div>
-                    <div class="process__item-info-text">
+                    <div class="achievements__text">
                         Positive feedbacks
                     </div>
                 </div>
             </div>
-            <div class="process__item">
-                <div class="process__item-logo">
-                        <img src="./assets/SVG/like.svg" alt="Happy clients">
+
+            <div class="achievements__item">
+                <div class="achievements__img">
+                    <img src="./assets/SVG/like.svg" alt="Happy clients">
                 </div>
-                <div class="process__item-info">
-                    <div class="process__item-info-number">
+                <div class="achievements__info">
+                    <div class="achievements__number">
                         735
                     </div>
-                    <div class="process__item-info-text">
+                    <div class="achievements__text">
                         Happy clients
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="work">
+        <div class="work__list">
+            <div class="work__item">
+                <div class="work__img _book"></div>
+                <div class="work__overlay">
+                    <div class="work__overlay-img">
+                        <img src="./assets/SVG/look.svg" alt="Look">
+                    </div>
+                </div>
+            </div>
+            <div class="work__item">
+                <div class="work__img _bottle"></div>
+                <div class="work__overlay">
+                    <div class="work__overlay-img">
+                        <img src="./assets/SVG/look.svg" alt="Look">
+                    </div>
+                </div>
+            </div>
+            <div class="work__item">
+                <div class="work__img _dessert"></div>
+                <div class="work__overlay">
+                    <div class="work__overlay-img">
+                        <img src="./assets/SVG/look.svg" alt="Look">
+                    </div>
+                </div>
+            </div>
+            <div class="work__item">
+                <div class="work__img _gift"></div>
+                <div class="work__overlay">
+                    <div class="work__overlay-img">
+                        <img src="./assets/SVG/look.svg" alt="Look">
+                    </div>
+                </div>
+            </div>
+            <div class="work__item">
+                <div class="work__img _ipad"></div>
+                <div class="work__overlay">
+                    <div class="work__overlay-img">
+                        <img src="./assets/SVG/look.svg" alt="Look">
+                    </div>
+                </div>
+            </div>
+            <div class="work__item">
+                <div class="work__img _letter"></div>
+                <div class="work__overlay">
+                    <div class="work__overlay-img">
+                        <img src="./assets/SVG/look.svg" alt="Look">
+                    </div>
+                </div>
+            </div>
+            <div class="work__item">
+                <div class="work__img _parfume"></div>
+                <div class="work__overlay">
+                    <div class="work__overlay-img">
+                        <img src="./assets/SVG/look.svg" alt="Look">
+                    </div>
+                </div>
+            </div>
+            <div class="work__item">
+                <div class="work__img _web"></div>
+                <div class="work__overlay">
+                    <div class="work__overlay-img">
+                        <img src="./assets/SVG/look.svg" alt="Look">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="more">
+        Load more work
+    </div>
+
+    <div class="process" id="process">
+        <div class="process__desccription">
+            <div class="process__title">
+                Our Work Process
+            </div>
+            <div class="process__info">
+                Was years it seasons was there form he in them together over that, third sixth gathered female creeping bearing behold years.
+            </div>
+        </div>
+        <div class="process__video">
+            <iframe width="1200" height="580" src="https://www.youtube.com/embed/9No-FiEInLA" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>

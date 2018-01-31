@@ -1,0 +1,69 @@
+.skills {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    max-width: $page-width;
+    background: url('../assets/skills/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__body {
+        padding: 160px 100px 185px 100px;
+    }
+
+    &__title {
+        color: $black;
+        font-size: 29px;
+        font-weight: 600;
+        margin-bottom: 35px;
+    }
+
+    &__list {
+        &-item {
+            position: relative;
+            color: $black;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+
+            & + & {
+                margin-top: 60px;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: -20px;
+                left: 0;
+                height: 3px;
+                background-color: $light-green;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                bottom: -20px;
+                left: 0;
+                width: 30%;
+                height: 3px;
+                background-color: $light-grey-bar;
+            }
+
+            &._design::after {
+                width: 20%;
+            }
+
+            &._development::after {
+                width: 25%;
+            }
+
+            &._marketing::after {
+                width: 17%;
+            }
+
+            & ._percent {
+                padding: 0 10px;
+            }
+        }
+    }
+}

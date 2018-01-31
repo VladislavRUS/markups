@@ -1,69 +1,92 @@
 .work {
-    font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
     max-width: $page-width;
-    background: url('../assets/skills/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    &__body {
-        padding: 160px 100px 190px 100px;
-    }
-
-    &__title {
-        color: $black;
-        font-size: 29px;
-        font-weight: 600;
-        margin-bottom: 35px;
-    }
+    font-family: 'Montserrat', sans-serif;
 
     &__list {
-        &-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    &__img {
+        min-width: 341px;
+        min-height: 300px;
+
+        &._book {
+            background: url('../assets/work/book.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &._bottle {
+            background: url('../assets/work/bottle.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &._dessert {
+            background: url('../assets/work/dessert.jpg');
+            background-position: 30% 30%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &._gift {
+            background: url('../assets/work/gift.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &._ipad {
+            background: url('../assets/work/ipad.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &._letter {
+            background: url('../assets/work/letter.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &._parfume {
+            background: url('../assets/work/parfume.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &._web {
+            background: url('../assets/work/web.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__item:hover &__overlay {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    &__overlay {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        transform: translateY(100%);
+        transition: opacity .2s ease, transform .2s ease;
+
+        &-img {
             position: relative;
-            color: $black;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: 0.02em;
-            text-transform: uppercase;
-
-            & + & {
-                margin-top: 60px;
-            }
-
-            &::after {
-                position: absolute;
-                content: "";
-                bottom: -20px;
-                left: 0;
-                height: 3px;
-                background-color: $light-green;
-            }
-
-            &::before {
-                position: absolute;
-                content: "";
-                bottom: -20px;
-                left: 0;
-                width: 30%;
-                height: 3px;
-                background-color: $light-grey-bar;
-            }
-
-            &._design::after {
-                width: 20%;
-            }
-
-            &._development::after {
-                width: 25%;
-            }
-
-            &._marketing::after {
-                width: 17%;
-            }
-
-            & ._percent {
-                padding: 0 10px;
-            }
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 50px;            
         }
     }
 }

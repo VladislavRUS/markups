@@ -1,0 +1,50 @@
+.achievements {
+    margin: 0 auto;
+    max-width: $page-width;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $light-green;
+    color: white;
+    padding: 100px 0 65px 0;
+    
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 100px;
+    }
+
+    &__item {
+        max-width: 300px;
+        
+        & + & {
+            margin-left: 70px;
+        }
+    }
+
+    &__img {
+        display: inline-block;
+        min-width: 45px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__info {
+        position: relative;
+        top: -3px;
+        display: inline-block;
+    }
+
+    &__number {
+        position: relative;
+        top: -11px;
+        font-weight: 600;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+    }
+}
