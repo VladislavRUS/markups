@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 
-gulp.task('browser-sync', function () {
+gulp.task('browser-sync', () => {
     browserSync.init({
         server: {
             baseDir: "./"
@@ -15,7 +15,7 @@ gulp.task('watch', () => {
     gulp.watch('./styles/**/*.scss', ['sass']);
 });
 
-gulp.task('sass', function () {
+gulp.task('sass', () => {
     return gulp.src('./styles//main.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./styles/'))
